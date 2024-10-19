@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="nav-bar">
+        <img class="img logo" src="./img/logo_small.png" alt="LOGO" />
+        <h1>Kochwelt</h1>
+      </div>
+      <div class="link">
+        <a class="pr-15" href="./index.html">Start</a>
+        <a class="pr-15" href="./knoepfle.html">Rezept des Tages</a>
+        <a class="pr-15" href="./kontakt.html">Kontakt</a>
+        <a class="pr-15" href="./impressum.html">Impressum</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="menu1">
+    <h2>Paprikaschoten mit Hackfleischfüllung</h2>
+    <img class="menu1-img" src="./img/peppers.jpg" alt="Gefüllte Paprikaschoten" />
+
+    <section class="difficulty">
+      <div class="mr-20">
+        <span class="time">
+          <img src="./img/icons/clock-regular.svg" alt="Uhr" />60 Minuten</span>
+      </div>
+      </div>
+      <div class="mr-20">
+        <span class="difficult">
+          <img src="./img/icons/brain-solid.svg" alt="Level" />
+          simpel
+        </span>
+      </div>
+      <div class="mr-20">
+        <span class="date">
+          <img src="./img/icons/calendar-alt-regular.svg" alt="Datum" />
+          15.08.2024
+        </span>
+      </div>
+    </section>
+    <form class="amt-ingredients" onsubmit="calculateIngredients(event)">
+      <label class="mr-20" for="amt-portions">Zutaten für</label>
+      <input class="input-amt-portions" id="amt-portions" name="amt-portions" min="1" max="20" type="number" required />
+
+      <button type="submit">Portionen</button>
+    </form>
+
+    <div class="ingredients div-shadow" data-base-amount="1">1 Paprikaschote(n)</div>
+    <div class="ingredients" data-base-amount="100">100g Hackfleisch</div>
+    <div class="ingredients div-shadow" data-base-amount="100">100ml Kochsahne</div>
+    <div class="ingredients" data-base-amount="100">100g Feta</div>
+    <div class="ingredients div-shadow" data-base-amount="50">50g Mais</div>
+    <div class="ingredients" data-base-amount="25">25g Reibekäse</div>
+    <div class="ingredients div-shadow" data-base-amount="1">1 Prise(n) Salz und Pfeffer</div>
+    <div class="ingredients" data-base-amount="1">1 Prise(n) Paprikapulver</div>
+
+    <section>
+      <h2>Zubereitung</h2>
+      <p>Die Paprikaschoten waschen, den Deckel abschneiden und die Kerne sowie die weißen Innenhäute entfernen.
+        Die Schoten sollten stabil stehen können. In einer großen Pfanne das Öl erhitzen und Hackfleisch hinzufügen und
+        anbraten, bis es durchgegart und krümelig ist.
+        Paprikapulver, Salz und Pfeffer hinzufügen. Alles gut vermengen und einige Minuten köcheln lassen, damit sich
+        die Aromen verbinden. Danach in gewünchter Menge Mais hinzugeben und die Hackfleisch-Mischung in die vorbereiteten Paprikaschoten füllen. 
+        Die Füllung gut andrücken, damit sie nicht herausfällt. Die gefüllten Paprikaschoten in einen großen Topf oder eine Auflaufform stellen.
+        Den Reibekäse darüber streuen, sodass die Schoten und das Hackfleisch vollständig mit Käse bedeckt sind.
+        Anschließend kommt alles für 30 Minuten bei 180 Grad Celsius Ober/Unterhitze oder Umluft in den Ofen. </p>
+    </section>
+  </section>
+  <footer>
+    <div class="footer-div">
+      <img class="logo invert" src="./img/logo.png" alt="LOGO" />
+      <div class="footer_logo">
+        <a href="#"><img class="footer_logo" src="./img/facebook_white.png" alt="Facebook" /></a>
+        <a href="#"><img class="footer_logo" src="./img/instagram_white.png" alt="Instagram" /></a>
+        <a href="#"><img class="footer_logo padding" src="./img/twitter_white.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

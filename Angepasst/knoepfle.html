@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kochwelt</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-container content">
+                <a href="./index.html" class="nav-bar-logo">
+                    <img class="img logo" src="./img/logo_small.png" alt="LOGO" />
+                    <h1>Kochwelt</h1>
+                </a>
+                <button class="burger-menu-btn mr-24" onclick="toggleRespMenu()">
+                    <img class="burger-logo" src="./img/burger.png" alt="Burger" />
+                </button>
+
+                <nav id="resp-menu" class="resp-menu-box resp-menu-closed">
+                    <a href="./index.html">Start</a>
+                    <a href="./knoepfle.html">Rezept des Tages</a>
+                    <a href="./impressum.html">Impressum</a>
+                    <a href="./datenschutz.html">Datenschutz</a>
+                    <a href="./kontakt.html">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="menu">
+            <h2>Puten-Knöpfle-Pfanne</h2>
+            <img class="menu-img" src="./img/puten-knoepfle-pfanne.webp" alt="Puten-Knöpfle-Pfanne" />
+
+            <div class="difficulty separator">
+                <div class="mr-20">
+                    <img src="./img/icons/clock-regular.svg" alt="Clock" />
+                    <span>35 Min.</span>
+                </div>
+                <div class="mr-20">
+                    <img src="./img/icons/brain-solid.svg" alt="Brain" />
+                    <span>simpel</span>
+                </div>
+                <div class="mr-20">
+                    <img src="./img/icons/calendar-alt-regular.svg" alt="Date" />
+                    <span>17.08.2024</span>
+                </div>
+            </div>
+
+            <form class="amt-ingredients" onsubmit="calculateIngredients(event)">
+                <label class="mr-20" for="amt-portions">Zutaten für</label>
+                <input class="input-amt-portions" id="amt-portions" name="amt-portions" min="1" max="20" type="number" value="1" portion-base-amount="4" required />
+
+                <button type="submit">Portionen</button>
+            </form>
+
+            <div class="ingredients div-shadow" data-base-amount="400">400g Knöpfle</div>
+            <div class="ingredients" data-base-amount="500">500g Putschnitzel</div>
+            <div class="ingredients div-shadow" data-base-amount="2">2 EL Pflanzenöl</div>
+            <div class="ingredients" data-base-amount="500">500g Brokolli</div>
+            <div class="ingredients div-shadow" data-base-amount="2">2 Möhre(n)</div>
+            <div class="ingredients" data-base-amount="300">300ml Gemühsebrühe</div>
+            <div class="ingredients div-shadow" data-base-amount="2">2 Frühlingszwiebel(n)</div>
+            <div class="ingredients" data-base-amount="2">2 EL Crème fraîche</div>
+            <div class="ingredients div-shadow mb-50" data-base-amount="0">Salz und Pfeffer</div>
+
+            <div class="preparation">
+                <h2>Zubereitung</h2>
+
+                <div class="difficulty mb-40">
+                    <div class="mr-20">
+                        <img src="./img/icons/clock-regular.svg" alt="Clock" />
+                        <span>Vorbereitung ca. 25 Min.</span>
+                    </div>
+                    <div class="mr-20">
+                        <img src="./img/icons/clock-regular.svg" alt="Clock" />
+                        <span>Gesamtzeit ca. 35 Min.</span>
+                    </div>
+                </div>
+
+                <ol type="1">
+                    <li>
+                        Putenschnitzel waschen, trocken tupfen, in Streifen schneiden, mit Knöpfle in erhitztem Öl anbraten und herausnehmen. Brokkoli putzen, in Röschen zerteilen und waschen. Möhren
+                        schälen, waschen und in dünne Scheiben schneiden.
+                    </li>
+
+                    <br />
+
+                    <li>Brokkoli und Möhren in das verbliebene Bratfett geben und andünsten. Brühe angießen, aufkochen und abgedeckt ca. 10 Minuten garen.</li>
+
+                    <br />
+
+                    <li>
+                        Frühlingszwiebeln putzen, waschen und in feine Ringe schneiden. Putenfleisch und Knöpfle zu dem Gemüse geben und kurz mit erhitzen Mit Crème fraîche verfeinern, mit Salz und
+                        Pfeffer abschmecken, auf Teller anrichten, Frühlingszwiebeln überstreuen und servieren.
+                    </li>
+                </ol>
+                <ul class="mb-40">
+                    <li>Pro Portion:</li>
+                    <li>kJ/kcal: 1911/457</li>
+                    <li>EW: 37.9g</li>
+                    <li>F: 16.8g</li>
+                    <li>KH: 34.4g</li>
+                    <li>BE: 3</li>
+                </ul>
+            </div>
+
+            <h3>Rezept erstellt von</h3>
+            <div class="user">
+                <img src="./img/profile.png" alt="Profile picture" />
+                <span>Vivienne, Nico & Marc</span>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-div">
+                <img class="logo invert" src="./img/logo.png" alt="LOGO" />
+                <div class="footer_logo">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer_logo" src="./img/facebook_white.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="footer_logo" src="./img/instagram_white.png" alt="Instagram" /></a>
+                    <a href="https://x.com/" target="_blank"><img class="footer_logo padding" src="./img/twitter_white.png" alt="" /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+  </head>
+
+ 
+<body>
+  <header class="media_not_burger">
+    <div class="nav-container">
+      <a href="./index.html" class="nav-bar">
+        <img class="img logo" src="./img/logo_small.png" alt="LOGO" />
+        <h1>Kochwelt</h1>
+      </a>
+      <div class="link">
+        <a class="pr-15" href="./index.html">Start</a>
+        <a class="pr-15" href="./knoepfle.html">Rezept des Tages</a>
+        <a class="pr-15" href="./impressum.html">Impressum</a>
+        <a class="pr-15" href="./datenschutz.html">Datenschutz</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <header class="media_burger mb-80">
+      <div class="nav-container">
+        <a href="./index.html" class="nav-bar">
+          <img class="img logo" src="./img/logo_small.png" alt="LOGO" />
+          <h1>Kochwelt</h1>
+        </a>
+        <img class="burger_logo pr-120" src="./img/burger.png" alt="Burger" onclick="toggleRespMenu()"></button>
+      </div>
+    </header>
+
+    <div id="resp_menu" class="resp_menu_box resp_menu_closed link">
+      <img class="burger_logo mb-5 pl-10" src="./img/burger.png" alt="Burger" onclick="toggleRespMenu()"></button>
+      <a class="pr-15 mb-5 pl-10" href="./index.html">Start</a>     
+      <a class="pr-15 mb-5 pl-10" href="./knoepfle.html">Rezept des Tages</a>
+      <a class="pr-15 mb-5 pl-10" href="./impressum.html">Impressum</a>
+      <a class="pr-15 mb-5 pl-10" href="./datenschutz.html">Datenschutz</a>
+      <a class="pl-10" href="./kontakt.html">Kontakt</a>
+    </div>
+  </div>
+
+    <div class="greybackground contact-formular-size">
+      <form class="contact-column" onsubmit="sendMail(event)">
+        <h2 class="h2-contact">Kontaktiere uns</h2>
+        <label>
+          Dein Name: <br />
+          <input class="contact-input" type="text" id="yourname" name="yourname" required />
+        </label>
+        <label>
+          Deine E-Mail: <br />
+          <input class="contact-input" type="email" id="yourmail" name="email" required />
+        </label>
+        <label>
+          Deine Nachricht: <br />
+          <textarea class="contact-input contact-input-size" cols="40" rows="10" maxlength="2000" id="yourmessage" name="yourmessage" required></textarea>
+        </label>
+        <button class="contact-button" type="submit">Abschicken</button>
+      </form>
+    </div>
+
+    <footer class="mt-80">
+      <div class="footer-div">
+        <img class="logo invert" src="./img/logo.png" alt="LOGO" />
+        <div class="footer_logo">
+          <a href="https://www.facebook.com/" target="_blank"><img class="footer_logo" src="./img/facebook_white.png" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/" target="_blank"><img class="footer_logo" src="./img/instagram_white.png" alt="Instagram" /></a>
+          <a href="https://x.com/" target="_blank"><img class="footer_logo padding" src="./img/twitter_white.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,567 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: ‚Raleway‘, sans-serif;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pr-24 {
+  padding-right: 24px;
+}
+
+.pr-120 {
+  padding-right: 120px;
+}
+
+.pl-120 {
+  padding-left: 120px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 0;
+}
+
+button:hover {
+  background-color: rgb(32, 161, 32);
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  color: green;
+}
+
+/* h2 hat als standardgrösse 24px = 1.5em */
+/* h2 {
+    font-size: 24px;
+} */
+
+img {
+  border-radius: 10px;
+}
+
+.greybackground {
+  background-color: rgba(220, 220, 220, 255);
+}
+
+footer {
+  background-color: rgb(65, 58, 57);
+  color: white;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .footer-img { */
+/* padding: ;  */
+/* } */
+
+header {
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 5px 10px lightgray;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-img {
+  padding-left: 120px !important;
+  border-radius: 10px;
+}
+
+.icons {
+  /* height: ;  */
+  padding: 4px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.link {
+  margin-bottom: 5px;
+  padding-right: 120px;
+}
+
+.link-attr {
+  /* padding-right: 15px; */
+}
+
+/* .link-attr:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  color: green;
+} */
+
+.logo {
+  height: 40px;
+  padding-left: 120px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_logo {
+  height: 30px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.footer_logo :hover {
+  filter: drop-shadow(0px 0px 1px white);
+  cursor: pointer;
+}
+
+h1 {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.invert {
+  color: white;
+  filter: invert(1);
+}
+
+.padding {
+  padding-right: 120px;
+}
+
+/* ----------------------- section menu ----------------------- */
+
+.menu {
+  max-width: 1200px;
+  margin: 0 0 120px;
+  padding: 0 120px;
+}
+
+.menu-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.difficulty {
+  display: flex;
+}
+
+.separator {
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.difficulty img {
+  height: 15px;
+  margin-right: 8px;
+}
+
+.difficulty div {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 8px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.amt-ingredients {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.input-amt-portions {
+  padding-block: 0;
+  padding-inline: 0;
+  padding-left: 4px;
+  /* padding: 0 0 0 4px; */
+  height: 36px;
+  border: 1px solid rgb(234, 234, 234);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#amt-portions {
+  width: 150px;
+}
+
+.ingredients {
+  padding: 16px 32px;
+}
+
+ol {
+  padding-inline-start: 13.95px;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 32px;
+}
+
+.user span {
+  font-size: 24px;
+}
+
+/* ----------------------- section menu end ----------------------- */
+
+.div-shadow {
+  background-color: rgb(234, 234, 234);
+  border-radius: 8px;
+}
+
+.rezept_des_tages {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  margin-left: 120px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-right: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.rezept_des_tages_discription {
+  padding-top: 60px;
+}
+
+.margin-block {
+  margin-block: unset;
+}
+
+.something_new_img {
+  aspect-ratio: 1 / 1;
+  width: 170px;
+  object-fit: cover;
+}
+
+.something_new {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  text-align: center;
+  /* padding-left: 120px;
+  padding-right: 120px; */
+}
+
+/* .padding-section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
+} */
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-block: unset;
+}
+
+.vs {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.margin {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+/* ----------------------- contact form ----------------------- */
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.contact-input {
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  width: 426px;
+  padding: 8px 4px;
+}
+
+.contact-input-size {
+  height: 240px;
+}
+
+.contact-formular-size {
+  width: 470px;
+  border-radius: 16px;
+  /* max-width: 1060px; */
+  /* margin: 60px auto 120px; */
+  margin: auto;
+  /* padding: 0 120px; */
+}
+
+.h2-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  width: 430px;
+}
+
+.contact-column label {
+  margin-top: 10px;
+}
+
+.contact-button {
+  border-radius: 4px;
+  border: none;
+  width: 170px;
+  margin-top: 6px;
+  padding: 8px 0;
+}
+
+textarea,
+input {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+/* ----------------------- scroll bar ----------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 128, 0, 255);
+}
+
+/* -----------------------------------------------------------*/
+/* ----------------------- burger menu -----------------------*/
+/* -----------------------------------------------------------*/
+
+.content {
+  min-height: 180px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.resp_menu_box {
+  background-color: rgba(220, 220, 220, 255);
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+  transform: translateX(100%);
+}
+
+.burger_logo{
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* -----------------------------------------------------------*/
+/* ----------------------- @ media -----------------------*/
+/* -----------------------------------------------------------*/
+
+
+@media (min-width: 900px){
+  .media_burger{
+    display: none;
+  }
+}
+
+@media (max-width: 830px){
+  
+}
+
+@media (max-width: 900px){
+  .media_not_burger{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  h1 {
+    display: none; 
+  }
+  .menu {
+    margin: 50px;
+    margin-top: 0;
+    padding: 0;
+  }
+  .logo {
+    padding-left: 50px;
+    padding-right: 0;
+    padding-bottom: auto;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .difficulty {
+    flex-direction: column;  
+  }
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .mr-20{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .padding{
+    padding-right: 0;
+  }
+
+  .invert{
+    display: none; 
+  }
+
+  .mr-20{
+    margin-right: 0;
+  }
+  .pr-120{
+    padding-right: 50px;
+  }
+  .mt-60{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .link{
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .footer_logo{
+    justify-content: space-around;
+    padding-left: 0;
+  }
+}
+
+.mb-5{
+  margin-bottom: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.mt-80 {
+  margin-top: 60px;
+}
+
+.mb-80{
+  margin-bottom: 80px;
+}
